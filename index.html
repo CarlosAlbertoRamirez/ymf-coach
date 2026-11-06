@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>YMF Coach · Español mexicano real, con IA | Your Mexican Friend</title>
+<meta name="description" content="YMF Coach es la app de Your Mexican Friend para practicar español mexicano real con inteligencia artificial: conversación, corrección de acento y modismos coloquiales, con puente a clases 1 a 1.">
+<meta property="og:title" content="YMF Coach · Español mexicano real, con IA">
+<meta property="og:description" content="Practica conversación, acento y modismos del español que sí se habla en México.">
+<meta property="og:image" content="assets/og.png">
+<meta name="theme-color" content="#0d0524">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+<canvas id="stars" aria-hidden="true"></canvas>
+
+<header class="nav" id="top">
+  <a class="brand" href="#inicio" aria-label="Your Mexican Friend, inicio">
+    <img src="assets/logo.png" alt="Logotipo de Your Mexican Friend (YMF)" width="44" height="44">
+    <span>YMF <b>Coach</b></span>
+  </a>
+  <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+  <nav id="menu" class="menu" aria-label="Principal">
+    <a href="#que-es">Qué es</a>
+    <a href="#como-funciona">Cómo funciona</a>
+    <a href="#beneficios">Beneficios</a>
+    <a href="#para-quien">Para quién</a>
+    <a href="#catalogo">Catálogo</a>
+    <a href="#nosotros">Nosotros</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+  <button class="cart-btn" id="cartBtn" aria-label="Abrir carrito">
+    <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M3 4h2l2.4 11.2a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 1.9-1.4L21 8H6.1" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="10" cy="20" r="1.4" fill="currentColor"/><circle cx="17" cy="20" r="1.4" fill="currentColor"/></svg>
+    <span class="cart-count" id="cartCount">0</span>
+  </button>
+</header>
+
+<main id="contenido">
+
+<!-- HERO -->
+<section class="hero" id="inicio">
+  <div class="hero-text">
+    <p class="eyebrow">Real Mexican Spanish, powered by AI</p>
+    <h1>Habla el español<br>que <em>sí</em> se habla<br>en México.</h1>
+    <p class="lead">YMF Coach es tu compañero de práctica con inteligencia artificial: conversas, corriges tu acento y aprendes los modismos de la calle, no los del libro.</p>
+    <div class="cta-row">
+      <a class="btn primary" href="#catalogo">Ver planes</a>
+      <a class="btn ghost" href="#modismo">Probar el modismo del día</a>
+    </div>
+    <ul class="trust" aria-label="Datos de la marca">
+      <li><strong>Marca registrada</strong> ante el IMPI</li>
+      <li><strong>Podcast bilingüe</strong> y comunidad en redes</li>
+      <li><strong>Clases 1 a 1</strong> con un hablante nativo</li>
+    </ul>
+  </div>
+
+  <div class="hero-card" aria-label="Ejemplo ilustrativo de una conversación con YMF Coach">
+    <div class="phone">
+      <div class="phone-top"><img src="assets/favicon.png" alt="" width="28" height="28"><div><b>YMF Coach</b><small>en línea · demo ilustrativa</small></div></div>
+      <div class="chat">
+        <div class="msg you">¿Cómo digo “cool” en México?</div>
+        <div class="msg bot">Puedes decir <b>“chido”</b> o <b>“padre”</b>. Por ejemplo: <i>“¡Qué chido está tu playera!”</i></div>
+        <div class="msg bot">Ahora tú: repite en voz alta 🎤<br><span class="chip">“¡Qué chido!”</span></div>
+        <div class="msg you voice"><span class="wave"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span> Grabando…</div>
+        <div class="msg bot">¡Muy bien! Cuida la “d”: suena suave, casi como una “th” corta. Intenta otra vez.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- QUÉ ES / PROPUESTA DE VALOR -->
+<section class="section" id="que-es">
+  <div class="wrap">
+    <p class="kicker">Qué es YMF Coach</p>
+    <h2>El español real,<br>no el “de libro”.</h2>
+    <p class="section-lead">Las apps genéricas enseñan un español neutral que casi nadie habla en la calle. <strong>Your Mexican Friend</strong> nació para cerrar esa brecha, y <strong>YMF Coach</strong> es su producto tecnológico: una aplicación de práctica conversacional de español mexicano con inteligencia artificial, conectada con clases de tutoría 1 a 1.</p>
+    <div class="grid3">
+      <article class="card">
+        <div class="ico">💬</div>
+        <h3>Conversación con IA</h3>
+        <p>Practica situaciones reales (pedir tacos, tomar un taxi, platicar con amigos) sin miedo a equivocarte.</p>
+      </article>
+      <article class="card">
+        <div class="ico">🎙️</div>
+        <h3>Corrección de acento</h3>
+        <p>Hablas, el Coach te escucha y te da pistas concretas para sonar más natural.</p>
+      </article>
+      <article class="card">
+        <div class="ico">🌮</div>
+        <h3>Modismos y cultura</h3>
+        <p>Aprende expresiones coloquiales y el contexto cultural que las acompaña.</p>
+      </article>
+    </div>
+    <div class="value-box">
+      <h3>Nuestra propuesta de valor</h3>
+      <p>Aprendes <strong>español mexicano auténtico</strong> con contenido real, una comunidad viva y tecnología accesible, y cuando necesitas a una persona, el puente a una clase 1 a 1 ya existe.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CÓMO FUNCIONA -->
+<section class="section alt" id="como-funciona">
+  <div class="wrap">
+    <p class="kicker">Cómo funciona</p>
+    <h2>Empieza en tres pasos.</h2>
+    <p class="section-lead">Sin formularios largos ni configuración técnica.</p>
+    <ol class="steps">
+      <li><span class="num">1</span><h3>Dinos tu nivel</h3><p>De principiante (A1) a avanzado (C1).</p></li>
+      <li><span class="num">2</span><h3>Elige tu objetivo</h3><p>Viajar, hacer amigos, trabajar o entender la cultura.</p></li>
+      <li><span class="num">3</span><h3>Fija tu frecuencia</h3><p>Cuántos días a la semana quieres practicar. Nosotros te acompañamos.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- MODISMO DEL DÍA -->
+<section class="section" id="modismo">
+  <div class="wrap narrow">
+    <p class="kicker">Interactúa</p>
+    <h2>Modismo del día</h2>
+    <div class="idiom" aria-live="polite">
+      <p class="idiom-word" id="idWord">…</p>
+      <p class="idiom-mean" id="idMean"></p>
+      <p class="idiom-ex" id="idEx"></p>
+      <button class="btn ghost" id="idNext" type="button">Otro modismo →</button>
+    </div>
+  </div>
+</section>
+
+<!-- BENEFICIOS -->
+<section class="section alt" id="beneficios">
+  <div class="wrap">
+    <p class="kicker">Características y beneficios</p>
+    <h2>Lo que haces con YMF Coach.</h2>
+    <div class="grid2">
+      <article class="feature"><h3>Practicas cuando quieras</h3><p><span class="tag">Característica</span> Disponible a cualquier hora desde el celular o la computadora.</p><p><span class="tag b">Beneficio</span> Aprendes a tu ritmo, sin depender de horarios de clase.</p></article>
+      <article class="feature"><h3>Retroalimentación inmediata</h3><p><span class="tag">Característica</span> Correcciones de pronunciación y de uso en cada respuesta.</p><p><span class="tag b">Beneficio</span> Corriges errores al momento y ganas confianza para hablar.</p></article>
+      <article class="feature"><h3>Contenido auténtico</h3><p><span class="tag">Característica</span> Modismos y frases inspiradas en conversaciones reales con hablantes nativos.</p><p><span class="tag b">Beneficio</span> Entiendes y usas el español de la calle, la música y las redes.</p></article>
+      <article class="feature"><h3>Rachas y retos</h3><p><span class="tag">Característica</span> Retos diarios, rachas de práctica e insignias por dominar categorías.</p><p><span class="tag b">Beneficio</span> Mantienes la constancia, que es lo que más pesa al aprender un idioma.</p></article>
+      <article class="feature"><h3>Comunidad</h3><p><span class="tag">Característica</span> Un espacio para usuarios activos con intereses compartidos.</p><p><span class="tag b">Beneficio</span> Practicas acompañado y encuentras motivación.</p></article>
+      <article class="feature"><h3>Puente a clases 1 a 1</h3><p><span class="tag">Característica</span> Conexión directa con las tutorías de Your Mexican Friend.</p><p><span class="tag b">Beneficio</span> Cuando quieres hablar con una persona, ya tienes dónde.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- PARA QUIÉN -->
+<section class="section" id="para-quien">
+  <div class="wrap">
+    <p class="kicker">Mercado objetivo</p>
+    <h2>¿Para quién es?</h2>
+    <div class="audience">
+      <div class="aud-main">
+        <p class="big">Jóvenes adultos de <strong>18 a 34 años</strong>, principalmente en <strong>Estados Unidos</strong>, con un interés genuino por México.</p>
+        <p>Les gusta la música regional, la gastronomía y el contenido en redes sociales, y quieren comunicarse con confianza con amigos, familia, colegas o durante un viaje, en el español que realmente se usa.</p>
+      </div>
+      <ul class="aud-list">
+        <li><b>Curiosos de la cultura:</b> escuchan música mexicana y quieren entender las letras.</li>
+        <li><b>Viajeros:</b> se preparan para pasar tiempo en México.</li>
+        <li><b>Conectores:</b> tienen amigos, pareja o familia mexicana.</li>
+        <li><b>Cansados del español de libro:</b> ya usaron apps genéricas.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- CATÁLOGO -->
+<section class="section alt" id="catalogo">
+  <div class="wrap">
+    <p class="kicker">Catálogo de productos y servicios</p>
+    <h2>Elige cómo quieres practicar.</h2>
+    <p class="section-lead">Agrega al carrito para ver cómo funciona la tienda. <span class="note">Precios ilustrativos: YMF Coach está en desarrollo y este sitio es un proyecto académico.</span></p>
+    <div class="catalog" id="catalog"></div>
+  </div>
+</section>
+
+<!-- MISIÓN VISIÓN VALORES -->
+<section class="section" id="nosotros">
+  <div class="wrap">
+    <p class="kicker">Nosotros</p>
+    <h2>Misión, visión y valores.</h2>
+    <div class="mvv">
+      <article class="mv"><h3>Misión</h3><p>Ayudar a personas con un interés genuino por la cultura mexicana a comunicarse en español real, el que se habla en la calle y no el de los libros, combinando contenido auténtico, comunidad y tecnología accesible.</p></article>
+      <article class="mv"><h3>Visión</h3><p>Ser, hacia 2030, la plataforma de referencia para aprender español mexicano coloquial con inteligencia artificial, reconocida tanto por su autenticidad cultural como por la calidad de su tecnología.</p></article>
+    </div>
+    <ul class="values">
+      <li><b>Autenticidad</b><span>Español como se habla de verdad.</span></li>
+      <li><b>Cercanía</b><span>Un amigo, no un manual.</span></li>
+      <li><b>Respeto cultural</b><span>Idioma y cultura van juntos.</span></li>
+      <li><b>Accesibilidad</b><span>Tecnología simple, al alcance de todos.</span></li>
+      <li><b>Mejora continua</b><span>Escuchamos y cambiamos.</span></li>
+    </ul>
+    <div class="story">
+      <h3>Quiénes somos</h3>
+      <p><strong>Your Mexican Friend (YMF)</strong> es una marca registrada ante el Instituto Mexicano de la Propiedad Industrial, con un podcast bilingüe, clases de español 1 a 1 para extranjeros y una comunidad en redes sociales que ya practica con nosotros. YMF Coach es el siguiente paso: llevar esa experiencia a una aplicación con inteligencia artificial.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section alt" id="faq">
+  <div class="wrap narrow">
+    <p class="kicker">Preguntas frecuentes</p>
+    <h2>Resolvemos tus dudas.</h2>
+    <div class="faq">
+      <details><summary>¿Necesito saber español para empezar?</summary><p>No. Puedes empezar desde nivel principiante (A1) y avanzar hasta nivel avanzado (C1).</p></details>
+      <details><summary>¿Es español de España o de México?</summary><p>Es exclusivamente español mexicano: vocabulario, expresiones y acento de México. No usamos “vosotros”.</p></details>
+      <details><summary>¿Puedo hablar con una persona real?</summary><p>Sí. Si quieres reforzar con un hablante nativo, Your Mexican Friend ofrece clases 1 a 1.</p></details>
+      <details><summary>¿YMF Coach ya está disponible?</summary><p>Está en desarrollo. Este sitio presenta el proyecto y su catálogo con fines académicos; los precios son ilustrativos.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<section class="section" id="contacto">
+  <div class="wrap contact">
+    <div>
+      <p class="kicker">Contacto</p>
+      <h2>Hablemos.</h2>
+      <p class="section-lead">¿Dudas, ideas o ganas de practicar? Escríbenos.</p>
+      <ul class="info">
+        <li><b>Correo:</b> <a href="mailto:urmexicanfriend@gmail.com">urmexicanfriend@gmail.com</a></li>
+        <li><b>Ubicación:</b> Ciudad de México, México</li>
+        <li><b>Sitio de la marca:</b> <a href="https://yourmexicanfriend.com/" target="_blank" rel="noopener">yourmexicanfriend.com</a></li>
+      </ul>
+      <div class="social" aria-label="Redes sociales">
+        <a href="https://www.instagram.com/your_mexicanfriend" target="_blank" rel="noopener" aria-label="Instagram de Your Mexican Friend">Instagram</a>
+        <a href="https://www.tiktok.com/" target="_blank" rel="noopener" aria-label="TikTok de Your Mexican Friend">TikTok</a>
+        <a href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="YouTube de Your Mexican Friend">YouTube</a>
+        <a href="https://open.spotify.com/" target="_blank" rel="noopener" aria-label="Podcast en Spotify">Podcast</a>
+      </div>
+    </div>
+    <form id="form" class="form" novalidate>
+      <label>Nombre<input type="text" name="nombre" required autocomplete="name"></label>
+      <label>Correo<input type="email" name="correo" required autocomplete="email"></label>
+      <label>Mensaje<textarea name="mensaje" rows="4" required></textarea></label>
+      <button class="btn primary" type="submit">Enviar mensaje</button>
+      <p class="form-msg" id="formMsg" role="status"></p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="wrap foot">
+    <div class="foot-brand"><img src="assets/logo.png" alt="" width="40" height="40"><span>Your Mexican Friend · YMF Coach</span></div>
+    <p class="legal">Proyecto académico elaborado para la asignatura Creación de Negocios de Tecnología (UNAM · FCA · SUAyED). YMF Coach está en desarrollo; los precios y la demo son ilustrativos. © 2026 Your Mexican Friend.</p>
+  </div>
+</footer>
+
+<!-- Carrito -->
+<aside class="drawer" id="drawer" aria-hidden="true" aria-label="Carrito de compras">
+  <div class="drawer-head"><h3>Tu carrito</h3><button id="closeCart" aria-label="Cerrar carrito">✕</button></div>
+  <ul class="cart-list" id="cartList"></ul>
+  <div class="drawer-foot">
+    <p class="total">Total: <b id="cartTotal">USD 0.00</b></p>
+    <button class="btn primary full" id="checkout" type="button">Finalizar compra (demo)</button>
+    <p class="demo-note" id="demoNote">Demostración: no se solicita ni procesa ningún dato de pago.</p>
+  </div>
+</aside>
+<div class="scrim" id="scrim"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
